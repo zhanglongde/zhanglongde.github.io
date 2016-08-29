@@ -83,7 +83,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -212,7 +214,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">专注于前端</div>
+                    <div id="js-aboutme">前端工程师</div>
                 </section>
                 
             </div>
@@ -416,7 +418,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/booklist/">书单</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/node-js/">nodejs学习笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/15/hello-world/">Welcome!</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/CSS揭秘/">CSS揭秘</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/booklist/">书单</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/27/node-js/">nodejs学习笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/15/hello-world/">Welcome!</a></li></ul>
 
 
 
@@ -494,11 +496,11 @@
             
             
             
-            
-            
+             categories: ".article-category a, a.tag-list-link", 
+             articleNav: "#article-nav a, #post-nav-button a", 
              archives: ".archive-article-title", 
              miniArchives: "a.post-list-link", 
-            
+             menu: ".header-menu a", 
              friends: "#js-friends a", 
              socail: ".social a" 
         }
